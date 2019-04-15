@@ -2,11 +2,14 @@ package helper;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
 import java.util.concurrent.TimeUnit;
 
 public class EnvironmentSetup {
 
     public static ChromeDriver driver;
+    public static Actions action;
 
     @BeforeClass
     public static void setUp(){

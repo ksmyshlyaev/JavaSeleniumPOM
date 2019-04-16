@@ -1,10 +1,10 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import pages.ElectronicsPage;
 import pages.MainPage;
 import pages.RegisterPage;
 import pages.SearchResultsPage;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestClass extends helper.EnvironmentSetup {
 

@@ -1,6 +1,6 @@
 package helper;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -11,7 +11,7 @@ public class EnvironmentSetup {
     public static ChromeDriver driver;
     public static Actions action;
 
-    @BeforeClass
+    @BeforeAll
     public static void setUp(){
         String workingDir = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", workingDir + "\\src\\main\\resources\\drivers\\chromedriver.exe");
@@ -20,7 +20,7 @@ public class EnvironmentSetup {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterClass
+    @AfterAll
     public static void close(){
         driver.quit();
     }

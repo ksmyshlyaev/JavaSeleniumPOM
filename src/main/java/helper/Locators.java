@@ -15,4 +15,17 @@ public class Locators {
 
     //helper.Locators for electronics page
     public static String cameraAndPhotoLinkText = "CAMERA & PHOTO";
+
+    //helper.Locators for item page
+    public static String addToCartComparisonButtonId = "comparison_add_to_cart_button-announce";
+
+    //helper.Locators for pre shopping cart page
+    public static String addedToCartTextId = "huc-v2-order-row-items-msg";
+    public static String cartButtonId = "hlb-view-cart-announce";
+
+    //helper.Locators for cart page
+    public static String itemsBoxGroupCssSelector = ".a-box-group.sc-buy-box-group";
+    public static String shoppingCartPlaceholderCssSelector = "#sc-active-cart > div > h1";
+    public static String deleteButtonXpath = "//input[@value='Delete']";
+    public static String subtotalLabelId = "sc-subtotal-label-activecart";
 }

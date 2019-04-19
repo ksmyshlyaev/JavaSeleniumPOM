@@ -4,8 +4,9 @@ public class Locators {
 
     //helper.Locators for main page
     public static String signInButtonId ="nav-link-accountList";
-    public static String departmentsLinkText ="Departments";
+    public static String departmentsLinkXpath ="//span[contains(text(),\"Departments\")]";
     public static String electronicsLinkText = "Electronics";
+    public static String searchBoxId ="twotabsearchtextbox";
 
     //helper.Locators for registration page
     public static String registrationErrorClassName = "a-list-item";

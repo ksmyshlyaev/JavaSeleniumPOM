@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -37,7 +38,7 @@ public class TestClass extends helper.EnvironmentSetup {
         assertTrue(CartPage.getItemsBoxGroupFullText().contains("Subtotal (1 item): $19.99"));
         CartPage.clickDeleteButton();
         try{
-            WebDriverWait wait = new WebDriverWait(driver, 3);
+            wait = new WebDriverWait(driver, 10);
             wait.until(ExpectedConditions.textToBe(By.id(Locators.subtotalLabelId), "Subtotal (0 items): USD 0.00"));
 
         } catch(TimeoutException e){

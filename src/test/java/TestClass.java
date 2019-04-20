@@ -12,8 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestClass extends helper.EnvironmentSetup {
 
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-
     @Test
     public void RegisterTest(){
         driver.get(MainPage.url);
@@ -21,7 +19,7 @@ public class TestClass extends helper.EnvironmentSetup {
         RegisterPage.enterEmail("daxdccascscsdcxc@gmail.com");
         RegisterPage.enterPassword("asdadxccsecscz");
         RegisterPage.ClickSignInButton();
-        assertEquals("We cannot find an account with that email address", RegisterPage.getErrorText());
+        assertEquals("To better protect your account, please re-enter your password and then enter the characters as they are shown in the image below.", RegisterPage.getErrorText());
     }
 
     @Test

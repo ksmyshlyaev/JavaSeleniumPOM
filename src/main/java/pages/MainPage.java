@@ -19,19 +19,6 @@ public class MainPage extends  helper.EnvironmentSetup {
 
     public static void clickOnElectronicsElement() {
         action = new Actions(driver);
-        /*try {
-            for (int i=0; i < 50; i++) {
-                action.moveToElement(driver.findElement(By.xpath(Locators.departmentsLinkXpath))).perform();
-                if (driver.findElement(By.linkText(Locators.electronicsLinkText)).isDisplayed())
-                    break;
-                action.moveToElement(driver.findElement(By.id(Locators.searchBoxId))).perform();
-            }
-            wait = new WebDriverWait(driver, 10);
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(Locators.electronicsLinkText)));
-        }
-        catch (Exception e){
-            fail(e.toString());
-        }*/
         action.moveToElement(driver.findElement(By.xpath(Locators.departmentsLinkXpath))).perform();
         driver.findElement(By.linkText(Locators.electronicsLinkText)).click();
     }

@@ -33,7 +33,7 @@ public class TestClass extends helper.EnvironmentSetup {
         ItemPage.getAddToCartComparisonButton().click();
         assertEquals("Added to Cart", PreShoppingCartPage.getAddedToCartText());
         PreShoppingCartPage.clickCartButton();
-        assertTrue(CartPage.getItemsBoxGroupFullText().contains("Subtotal (1 item): $19.99"));
+        assertTrue(CartPage.getItemsBoxGroupFullText().contains("Subtotal (1 item): $20.99"));
         CartPage.clickDeleteButton();
         try{
             wait = new WebDriverWait(driver, 10);
